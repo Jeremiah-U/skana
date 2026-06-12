@@ -67,6 +67,10 @@
 
 /* Responsive adjustments */
 @media (max-width: 991px) {
+  .cta-banner-heading {
+    font-size: 5rem;
+  }
+  
   .cta-banner-container {
     padding: 80px 24px;
   }
@@ -77,6 +81,10 @@
 }
 
 @media (max-width: 480px) {
+  .cta-banner-heading {
+    font-size: 4rem;
+  }
+  
   .cta-banner-buttons {
     flex-direction: column;
     align-items: stretch;
