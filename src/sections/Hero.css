@@ -89,6 +89,20 @@
   margin-bottom: 24px;
 }
 
+.hero-title-mobile {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .hero-title-desktop {
+    display: none;
+  }
+
+  .hero-title-mobile {
+    display: inline;
+  }
+}
+
 .highlight-grey {
   color: var(--text-grey);
 }

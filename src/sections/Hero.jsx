@@ -67,9 +67,16 @@ export default function Hero() {
 
             {/* Title */}
             <motion.h1 className="display-text hero-title" variants={itemVariants}>
-              Fast QR Payments <br />
-              for Your <span className="highlight-grey">Purchases</span> <br />
-              <span className="highlight-grey">and Businesses</span>
+              <span className="hero-title-desktop">
+                Fast QR Payments <br />
+                for Your <span className="highlight-grey">Purchases</span> <br />
+                <span className="highlight-grey">and Businesses</span>
+              </span>
+              <span className="hero-title-mobile">
+                Fast QR Payments <br />
+                for Your <span className="highlight-grey">Purchase</span> <br />
+                <span className="highlight-grey">and Business</span>
+              </span>
             </motion.h1>
 
             {/* Description */}
