@@ -1,0 +1,138 @@
+.friction-section {
+  width: 100%;
+  position: relative;
+  background-color: var(--bg-main);
+}
+
+.friction-container {
+  position: relative;
+  padding: 128px 24px;
+}
+
+.friction-header {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.friction-title {
+  text-align: left;
+}
+
+.eyes-illustration-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eyes-illustration {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Card Grid Styles */
+.friction-grid {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.friction-card {
+  border-radius: var(--card-border-radius);
+  padding: 48px 36px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+  transition: var(--transition-smooth);
+}
+
+/* Card Specific Colors */
+.pink-card {
+  background-color: var(--color-pink-card);
+  border: 1px solid rgba(220, 195, 245, 0.4);
+}
+
+.grey-card {
+  background-color: var(--color-grey-card);
+  border: 1px solid rgba(26, 26, 26, 0.05);
+}
+
+.blue-card {
+  background-color: var(--color-blue-card);
+  border: 1px solid rgba(195, 215, 245, 0.4);
+}
+
+.friction-card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+}
+
+.friction-card-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.friction-card-point {
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(26, 26, 26, 0.75);
+  line-height: 1.5;
+  position: relative;
+  padding-left: 14px;
+}
+
+.friction-card-point::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--text-dark);
+  opacity: 0.4;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .friction-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 36px;
+  }
+  
+  .friction-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .friction-card {
+    min-height: auto;
+    padding: 36px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .friction-container {
+    padding: 64px 24px;
+  }
+
+  .friction-header {
+    margin-bottom: 32px;
+  }
+}

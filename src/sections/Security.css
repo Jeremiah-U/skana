@@ -1,0 +1,136 @@
+.security-section {
+  width: 100%;
+  position: relative;
+  background-color: var(--bg-main);
+}
+
+.security-container {
+  position: relative;
+  padding: 128px 24px;
+}
+
+.security-title {
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+/* 4-Column Grid */
+.security-grid {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.security-card {
+  border-radius: var(--card-border-radius);
+  padding: 32px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  transition: var(--transition-smooth);
+}
+
+/* Background Color Implementations */
+.sec-bg-grey {
+  background-color: var(--color-grey-card);
+  border: 1px solid rgba(26, 26, 26, 0.05);
+  color: var(--text-dark);
+}
+
+.sec-bg-blue {
+  background-color: var(--color-blue-card);
+  border: 1px solid rgba(195, 215, 245, 0.4);
+  color: var(--text-dark);
+}
+
+.sec-bg-pink {
+  background-color: var(--color-pink-card);
+  border: 1px solid rgba(220, 195, 245, 0.4);
+  color: var(--text-dark);
+}
+
+.sec-bg-black {
+  background-color: var(--color-black-card);
+  border: 1px solid #1A1A1A;
+  color: #FFFFFF;
+}
+
+/* Icon Wrappers */
+.security-card-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+
+.sec-bg-grey .security-card-icon-wrapper {
+  background-color: rgba(26, 26, 26, 0.05);
+  color: var(--text-dark);
+}
+
+.sec-bg-blue .security-card-icon-wrapper {
+  background-color: rgba(0, 102, 204, 0.08);
+  color: #0066CC;
+}
+
+.sec-bg-pink .security-card-icon-wrapper {
+  background-color: rgba(128, 0, 128, 0.08);
+  color: #800080;
+}
+
+.sec-bg-black .security-card-icon-wrapper {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #FFFFFF;
+}
+
+.security-icon {
+  display: block;
+}
+
+/* Text styles */
+.security-card-text {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .security-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 567px) {
+  .security-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .security-container {
+    padding: 64px 24px;
+  }
+
+  .security-title {
+    margin-bottom: 32px;
+  }
+
+  .security-card {
+    min-height: auto;
+    padding: 24px;
+  }
+  
+  .security-card-icon-wrapper {
+    margin-bottom: 16px;
+  }
+}

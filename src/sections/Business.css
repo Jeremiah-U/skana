@@ -1,0 +1,142 @@
+.business-section {
+  width: 100%;
+  position: relative;
+  background-color: var(--bg-main);
+}
+
+.business-container {
+  position: relative;
+  padding: 128px 24px;
+}
+
+.business-header {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 56px;
+  width: 100%;
+}
+
+.business-header-left {
+  text-align: left;
+}
+
+.business-header-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.business-desc {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-grey);
+  font-weight: 500;
+  margin-bottom: 24px;
+  max-width: 500px;
+}
+
+.business-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.business-cta-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.business-badge-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.business-circle-badge {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--color-orange);
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 10px rgba(230, 167, 0, 0.2);
+}
+
+.business-circle-badge:hover {
+  transform: scale(1.1);
+  background-color: #D19800; /* slightly darker orange hover */
+}
+
+/* Banner Image Styles */
+.business-banner-container {
+  margin-left: -24px;
+  margin-right: -24px;
+}
+
+.business-banner-wrapper {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+}
+
+.business-banner-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mobile-banner {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-banner {
+    display: none;
+  }
+
+  .mobile-banner {
+    display: block;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .business-header {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+  
+  .business-desc {
+    max-width: 100%;
+  }
+  
+
+}
+
+@media (max-width: 480px) {
+  .business-cta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .business-container {
+    padding: 64px 24px;
+  }
+
+  .business-header {
+    margin-bottom: 32px;
+  }
+}
