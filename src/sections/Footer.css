@@ -194,8 +194,16 @@
   pointer-events: none;
 }
 
+.footer-watermark-img {
+  width: 13.75rem;
+  height: auto;
+  object-fit: contain;
+  opacity: 0.95;
+  display: block;
+}
+
 .footer-watermark-text {
-  font-size: 7.5rem;
+  font-size: 17.3125rem;
   font-weight: 900;
   color: #FFFFFF;
   opacity: 0.95;
@@ -246,5 +254,13 @@
 @media (max-width: 480px) {
   .footer-container {
     padding: 64px 24px 40px 24px;
+  }
+
+  .footer-watermark-img {
+    display: none;
+  }
+
+  .footer-watermark-text {
+    font-size: 7.5rem;
   }
 }

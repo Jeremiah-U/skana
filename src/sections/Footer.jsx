@@ -73,6 +73,7 @@ export default function Footer() {
 
         {/* Giant Watermark Logo at the bottom */}
         <div className="footer-watermark-wrapper">
+          <img src="/assets/logo-white.png" alt="Skana Watermark Logo" className="footer-watermark-img" />
           <span className="footer-watermark-text">Skana</span>
         </div>
 
