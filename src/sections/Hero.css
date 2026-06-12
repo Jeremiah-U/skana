@@ -240,7 +240,7 @@
 
 @media (max-width: 480px) {
   .hero-split {
-    gap: 60px;
+    gap: 20px;
   }
 
   .hero-text-col {
