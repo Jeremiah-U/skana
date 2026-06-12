@@ -246,6 +246,7 @@
 
   .mockup-wrapper {
     width: 100%;
+    overflow: hidden;
   }
 
   .mockup-image {

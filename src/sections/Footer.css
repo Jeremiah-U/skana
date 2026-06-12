@@ -261,6 +261,6 @@
   }
 
   .footer-watermark-text {
-    font-size: 5rem;
+    font-size: clamp(3rem, 10vw, 5rem);
   }
 }
