@@ -230,7 +230,18 @@
   }
 
   .hero-text-col {
+    align-items: flex-start;
+    text-align: left;
     padding: 20px 0 60px 0;
+  }
+
+  .hero-desc {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-ctas {
+    justify-content: flex-start;
   }
 
   .mockup-wrapper {
