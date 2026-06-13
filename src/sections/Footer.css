@@ -236,6 +236,10 @@
   .copyright-text {
     text-align: center;
   }
+
+  .legal-link-item:last-child {
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
