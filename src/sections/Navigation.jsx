@@ -26,18 +26,18 @@ export default function Navigation() {
         <GridLineOverlay />
         
         <div className="nav-content">
-          {/* Logo */}
-          <a href="#" className="nav-logo">
-            <img src="/assets/skana logo nav.png" alt="Skana Logo" />
-          </a>
-
-          {/* Desktop Nav Links */}
-          <nav className="nav-links-desktop">
-            <a href="#features" className="nav-link">Features</a>
-            <a href="#businesses" className="nav-link">For Businesses</a>
-            <a href="#security" className="nav-link">Security</a>
-            <a href="#support" className="nav-link">Support</a>
-          </nav>
+          {/* Left group: Logo + Nav Links */}
+          <div className="nav-left-group">
+            <a href="#" className="nav-logo">
+              <img src="/assets/skana logo nav.png" alt="Skana Logo" />
+            </a>
+            <nav className="nav-links-desktop">
+              <a href="#features" className="nav-link">Features</a>
+              <a href="#businesses" className="nav-link">For Businesses</a>
+              <a href="#security" className="nav-link">Security</a>
+              <a href="#support" className="nav-link">Support</a>
+            </nav>
+          </div>
 
           {/* Desktop CTA Dropdown */}
           <div className="nav-cta-container" ref={dropdownRef}>

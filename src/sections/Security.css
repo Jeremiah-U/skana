@@ -9,9 +9,31 @@
   padding: 128px 24px;
 }
 
+.security-header {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
 .security-title {
   text-align: left;
-  margin-bottom: 48px;
+}
+
+.security-illustration-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.security-illustration {
+  height: 80px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 /* 4-Column Grid */
@@ -104,6 +126,12 @@
 
 /* Responsive Styles */
 @media (max-width: 991px) {
+  .security-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
   .security-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -121,7 +149,7 @@
     padding: 64px 24px;
   }
 
-  .security-title {
+  .security-header {
     margin-bottom: 32px;
   }
 

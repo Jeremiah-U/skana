@@ -81,7 +81,7 @@ export default function Hero() {
 
             {/* Description */}
             <motion.p className="hero-paragraph hero-desc" variants={itemVariants}>
-              Send and receive money instantly using QR codes, usernames, or store names. No bank details. No delays.
+              Send and receive money instantly using QR codes, usernames, or store names.
             </motion.p>
 
             {/* CTA Buttons */}

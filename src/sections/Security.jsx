@@ -50,17 +50,33 @@ export default function Security() {
       <div className="layout-container security-container">
         <GridLineOverlay />
         
-        {/* Title */}
-        <motion.h2 
-          className="header-text security-title"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
-        >
-          Secure Payments <br />
-          You Can Trust
-        </motion.h2>
+        {/* Header Block */}
+        <div className="security-header">
+          <motion.h2 
+            className="header-text security-title"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+          >
+            Secure Payments <br />
+            You Can Trust
+          </motion.h2>
+
+          <motion.div 
+            className="security-illustration-wrapper"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
+          >
+            <img 
+              src="/assets/security-illustration.png" 
+              alt="Security Illustration" 
+              className="security-illustration"
+            />
+          </motion.div>
+        </div>
 
         {/* 4-Column Card Grid */}
         <motion.div 
